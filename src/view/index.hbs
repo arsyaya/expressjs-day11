@@ -1,0 +1,161 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- cdn bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- cdn fontawesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bundle min js bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <title>ArsWeb.id</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-secondary">
+      <div class="container">
+        <img style="width: 50px" src="image/logo.png" alt="brand-logo" />
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+            <li class="nav-item">
+              <a
+                class="nav-link me-2 fw-bold fs-5 text-light active"
+                aria-current="page"
+                href="/"
+              >Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-light" href="/add-project">Add
+                Project</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <a class="btn btn-info text-light" href="/contact">Contact Me</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- section card -->
+    <section
+      class="container d-flex m-5 text-bg-secondary p-3"
+      style="border-radius: 10px"
+    >
+      <div class="project me-auto py-4" style="width: 60%">
+        <h2 class="mb-4">Hi Welcome to my <span>hut</span>!</h2>
+        <p style="text-align: justify">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, qui
+          unde, eveniet saepe voluptatibus illo error libero explicabo iusto
+          quod quasi obcaecati porro laudantium, ex exercitationem? Tempora
+          architecto libero optio.
+          <br />
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Exercitationem rerum est possimus nulla dolore voluptatibus fugit
+          facere beatae optio, quidem eum enim doloribus quibusdam ea.
+          Voluptatibus nam mollitia voluptates. Totam.
+        </p>
+
+        <div class="info d-flex mx-3 my-5">
+          <a class="btn btn-info text-light me-3" href="/contact">Contact</a>
+          <h4 class="me-2">Download CV</h4>
+          <a href="#"><i
+              class="fa fa-download fa-2x"
+              aria-hidden="true"
+            ></i></a>
+        </div>
+
+        <div class="linkedin mx-5">
+          <a class="me-2" href="#"><i
+              class="fa-brands fa-square-github fa-2x"
+            ></i></a>
+          <a class="me-2" href="#"><i
+              class="fa-brands fa-square-instagram fa-2x"
+            ></i></a>
+          <a class="me-2" href="#"><i
+              class="fa-brands fa-linkedin fa-2x"
+            ></i></a>
+          <a class="me-2" href="#"><i
+              class="fa-brands fa-square-x-twitter fa-2x"
+            ></i></a>
+          <a href="#"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 400px">
+        <img src="image/bumn.jpg" class="card-img-top" alt="menteri" />
+        <div class="card-body text-center">
+          <h5 class="card-title">Erick Thohir</h5>
+          <h3 class="card-text">Menteri BUMN</h3>
+        </div>
+      </div>
+    </section>
+    <!-- section card end -->
+
+    <!-- list project -->
+    <div class="container d-flex" style="justify-content: center">
+      <div class="card me-3" style="width: 18rem">
+        <img src="image/blog-img-detail.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h4 class="card-title fst-italic">
+            Pasar Coding di Indonesia - 2023
+          </h4>
+          <p class="mb-3 fw-light fs-10">Duration: 3 month</p>
+          <p style="text-align: justify">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ut
+            est minima vel eveniet natus!
+          </p>
+          <div class="blog-detail-icon mb-3">
+            <a href="#"><i class="fa-brands fa-react"></i></a>
+            <a href="#"><i class="fa-brands fa-node-js"></i></a>
+            <a href="#"><i class="fa-brands fa-laravel"></i></a>
+          </div>
+          <div class="btn-group d-flex gap-2">
+            <a class="btn btn-dark text-light" href="#">Edit</a>
+            <a class="btn btn-dark text-light" href="#">Delete</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="/image/blog-img-detail.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h4 class="card-title fst-italic">
+            Pasar Coding di Indonesia - 2023
+          </h4>
+          <p class="mb-3 fw-light fs-10">Duration: 3 month</p>
+          <p style="text-align: justify">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ut
+            est minima vel eveniet natus!
+          </p>
+          <div class="blog-detail-icon mb-3">
+            <a href="#"><i class="fa-brands fa-react"></i></a>
+            <a href="#"><i class="fa-brands fa-node-js"></i></a>
+            <a href="#"><i class="fa-brands fa-laravel"></i></a>
+          </div>
+          <div class="btn-group d-flex gap-2">
+            <a class="btn btn-dark text-light" href="#">Edit</a>
+            <a class="btn btn-dark text-light" href="#">Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- list project end -->
+  </body>
+</html>
