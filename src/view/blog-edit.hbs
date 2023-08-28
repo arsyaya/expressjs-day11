@@ -30,7 +30,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-secondary">
       <div class="container">
-        <img style="width: 50px" src="image/logo.png" alt="brand-logo" />
+        <img style="width: 50px" src="/image/logo.png" alt="brand-logo" />
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
             <li class="nav-item">
@@ -44,10 +44,8 @@
               <a class="nav-link fs-5 text-light" href="/blog">Blog</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link fw-bold fs-5 text-light active"
-                href="/add-project"
-              >Add Project</a>
+              <a class="nav-link fs-5 text-light" href="/add-project">Add
+                Project</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -59,10 +57,16 @@
     <!-- navbar end -->
 
     <!-- form -->
-    <form action="add-project" method="post" class="container mt-5">
+    <form action="/blog-edit/{{id}}" method="post" class="container mt-5">
       <div class="mb-2">
         <label for="name" class="form-label fs-5">Project Name</label>
-        <input type="text" class="form-control" id="name" name="name" />
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          value="{{data.name}}"
+        />
       </div>
       <div class="row g-3 mb-2">
         <div class="col-md-6">
@@ -80,7 +84,7 @@
             id="desc"
             name="desc"
             style="height: 200px; resize: none"
-          ></textarea>
+          >{{data.desc}}</textarea>
         </div>
         <div class="mb-2">
           <label class="mb-2 fs-5">Technologies</label>
@@ -137,9 +141,15 @@
                 /></label>
             </div>
           </div>
-          <div class="button mt-4 d-flex justify-content-end">
-            <input class="btn btn-info" type="submit" />
+          <div class="d-flex">
+            <div class="button mt-4 me-3">
+              <input class="btn btn-info" type="Submit" />
+            </div>
+            <div class="button mt-4">
+              <a href="/blog" class="btn btn-danger">Cancel</a>
+            </div>
           </div>
+
         </div>
       </div>
     </form>
